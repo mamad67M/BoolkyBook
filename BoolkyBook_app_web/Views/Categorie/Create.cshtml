@@ -1,0 +1,43 @@
+﻿@model Category
+
+
+    <form method="post" asp-action="Create">
+        <div class="border p-3 mt-4">
+            <h4 class="text-primary">
+                creation d'une categorie
+            </h4>
+                <hr />
+           
+
+            <div class="mb-3">
+                <div>
+                    <label asp-for="Name"></label>
+                    <input asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="mb-3">
+                <div>
+                    <label asp-for="DisplayOrder"></label>
+                    <input asp-for="DisplayOrder" class="form-control" />
+                    <span asp-validation-for="DisplayOrder" class="text-danger"></span>
+
+                </div>
+            </div>
+            <div class="mb-3">
+                <div>
+                    <label asp-for="CreatedDateTime"></label>
+                    <input asp-for="CreatedDateTime" class="form-control" />
+                    <span asp-validation-for="CreatedDateTime" class="text-danger"></span>
+
+                </div>
+            </div>
+           
+                <button type="submit" class="btn btn-success" style="width:150px">Create </button>
+                <a asp-controller="Categorie" asp-action="Index" class="btn btn-secondary">GoBack </a>
+
+           
+
+        </div>
+    </form>
+
