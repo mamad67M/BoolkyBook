@@ -3,12 +3,14 @@
 
     <form method="post" asp-action="Create">
         <div class="border p-3 mt-4">
-            <h4 class="text-primary">
-                creation d'une categorie
-            </h4>
-                <hr />
            
-
+            <div class="row p-2">
+                <h4 class="text-primary">
+                    Création d'une catégorie
+                </h4>
+                <hr />
+            </div>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="mb-3">
                 <div>
                     <label asp-for="Name"></label>
